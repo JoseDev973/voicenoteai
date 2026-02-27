@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceNoteAI - Transcribe and Summarize Voice Notes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+        .hero .tagline {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        /* How it works */
+        .section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 50px;
+            color: #1a1a2e;
+        }
+        .steps {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .step {
+            flex: 1;
+            min-width: 220px;
+            max-width: 280px;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 16px;
+            background: #f8f9ff;
+        }
+        .step-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+        .step h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #764ba2;
+        }
+        .step p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Features */
+        .features-bg {
+            background: #f8f9ff;
+            padding: 80px 20px;
+        }
+        .features {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .feature {
+            padding: 24px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .feature h3 {
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
+        .feature p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+        .cta-section p {
+            opacity: 0.9;
+            margin-bottom: 32px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .hero .tagline { font-size: 1rem; }
+            .steps { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>VoiceNoteAI</h1>
+        <p class="tagline">Send a voice note on WhatsApp and get an instant transcription and summary powered by AI.</p>
+        <a href="https://wa.me/17814304558" class="cta-button">Try it on WhatsApp</a>
+    </section>
+
+    <section class="section">
+        <h2>How it works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-icon">🎙️</div>
+                <h3>1. Send a voice note</h3>
+                <p>Send any voice note to our WhatsApp number. Any length, any language.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">⚡</div>
+                <h3>2. AI processes it</h3>
+                <p>Our AI transcribes the audio and extracts the key points in seconds.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">📝</div>
+                <h3>3. Get the result</h3>
+                <p>Receive a clean transcription and a concise summary right in WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-bg">
+        <div class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>🌎 Multi-language</h3>
+                    <p>Works with voice notes in any language. Auto-detects and responds in the same language.</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ Fast</h3>
+                    <p>Get your transcription and summary in seconds, not minutes.</p>
+                </div>
+                <div class="feature">
+                    <h3>🤖 Smart summaries</h3>
+                    <p>AI-powered summaries that extract the key points. No more listening to long voice notes.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔒 Private</h3>
+                    <p>Your voice notes are processed and discarded. We don't store your audio or transcriptions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Stop listening. Start reading.</h2>
+        <p>Never waste time on long voice notes again.</p>
+        <a href="https://wa.me/17814304558" class="cta-button">Start now on WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 VoiceNoteAI. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
